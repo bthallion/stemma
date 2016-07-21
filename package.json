@@ -1,0 +1,31 @@
+{
+  "name": "stemma",
+  "version": "0.1.0",
+  "description": "Create log of top browsing context's native classes and DOM tree mutations",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sutkh/stemma.git"
+  },
+  "keywords": [
+    "debug",
+    "dom",
+    "mutations",
+    "global",
+    "window",
+    "shadowing"
+  ],
+  "author": "Ben Hallion",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sutkh/stemma/issues"
+  },
+  "homepage": "https://github.com/sutkh/stemma#readme"
+}
