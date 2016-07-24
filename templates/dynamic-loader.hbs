@@ -1,13 +1,15 @@
-let loader = document.createElement('script');
-loader.innerHTML = `
-    const
+(function () {
+    let loader = document.createElement('script');
+    loader.innerHTML = `
+        const
         frame  = document.createElement('iframe'),
         script = document.createElement('script');
-    script.type         = "text/javascript";
-    script.innerHTML    = \`{{{observer-script}}}\`;
-    frame.id            = 'page-observer-frame';
-    frame.style.cssText = 'position: absolute; width: 1px; height: 1px; left: -99999px; visibility: hidden;';
-    document.documentElement.appendChild(frame);
-    frame.contentDocument.documentElement.appendChild(script);
-`;
-document.head.appendChild(loader);
+        script.type         = "text/javascript";
+        script.innerHTML    = \`{{{observer-script}}}\`;
+        frame.id            = 'page-observer-frame';
+        frame.style.cssText = 'position: absolute; width: 1px; height: 1px; left: -99999px; visibility: hidden;';
+        document.documentElement.appendChild(frame);
+        frame.contentDocument.documentElement.appendChild(script);
+    `;
+    document.head.appendChild(loader);
+})();
