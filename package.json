@@ -10,8 +10,11 @@
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-handlebars": "^4.0.0",
     "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
     "handlebars": "^4.0.5",
-    "stream-handlebars": "^0.1.6"
+    "replacestream": "^4.0.0",
+    "stream-handlebars": "^0.1.6",
+    "vinyl-map": "^1.0.1"
   },
   "devDependencies": {},
   "scripts": {
