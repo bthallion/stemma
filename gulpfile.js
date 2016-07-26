@@ -1,12 +1,12 @@
 'use strict';
 
 const
-    sourceMap     = {},
-    gulp          = require('gulp'),
-    handlebars    = require('gulp-compile-handlebars'),
-    rename        = require('gulp-rename'),
-    vinylMap      = require('vinyl-map'),
-    replace       = require('gulp-replace');
+    sourceMap  = {},
+    gulp       = require('gulp'),
+    handlebars = require('gulp-compile-handlebars'),
+    rename     = require('gulp-rename'),
+    vinylMap   = require('vinyl-map'),
+    replace    = require('gulp-replace');
 
 gulp.task('createSourceMap', () => {
 
@@ -15,7 +15,7 @@ gulp.task('createSourceMap', () => {
     });
 
     gulp.src('lib/page-observer.js')
-        .pipe(replace('\\', '\\\\'))
+        .pipe(replace('\\', '\\\\\\'))
         .pipe(fileToString)
 });
 
