@@ -15,7 +15,9 @@ gulp.task('createSourceMap', () => {
     });
 
     gulp.src('lib/page-observer.js')
-        .pipe(replace('\\', '\\\\\\'))
+        .pipe(replace('\\', '\\\\\\\\'))
+        .pipe(replace('`', '\\\\\\\`'))
+        .pipe(replace('$', '\\\\\\\$'))
         .pipe(fileToString)
 });
 
