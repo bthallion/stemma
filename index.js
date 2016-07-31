@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-    build : require('./lib/script-builder')
+    build : require('./lib/util/script-builder')
 };
