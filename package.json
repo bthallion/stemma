@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bluebird": "^3.4.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-buffer": "0.0.2",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-handlebars": "^4.0.0",
@@ -14,11 +14,14 @@
     "handlebars": "^4.0.5",
     "replacestream": "^4.0.0",
     "stream-handlebars": "^0.1.6",
-    "vinyl-map": "^1.0.1"
+    "vinyl-map": "^1.0.1",
+    "snyk": "^1.105.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -38,5 +41,6 @@
   "bugs": {
     "url": "https://github.com/sutkh/stemma/issues"
   },
-  "homepage": "https://github.com/sutkh/stemma#readme"
+  "homepage": "https://github.com/sutkh/stemma#readme",
+  "snyk": true
 }
